@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+  /* font-family: 'Barlow', sans-serif; */
+  /* font-family: 'Fraunces', serif; */
+  nav ul  a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin: 20px 60px 0px 0px;
+    list-style: none;
+    font-family: 'Barlow', sans-serif;
+    
+  }
+  nav ul a li {
+    color:#fff;
+  }
+  .navLogo{
+    font-weight: bold;
+    font-size: 30px;
+    margin: 5px 0px 0px 0px;
+  }
+  .navLogo ~ a{
+    float: right;
+   
+  }
+  .btncontact{
+    border-radius: 30px;
+    background-color: #fff;
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif; 
+    padding: 10px 20px;
+  
+  }
+  /* header css */
+  .heroText{
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 60px;
+    font-family: 'Fraunces', serif; 
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    
+  }
+  /*  section 1*/
+  .sectionrow{
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+  .coloumn1{
+    width: 50%;
+    height: auto;
+    padding: 100px;
+    float: left;
+  }
+  .coloumn1 h2{
+    font-family: 'Fraunces', serif; 
+    font-size: 50px;
+  }
+  .coloumn2{
+    width: 50%;
+    height: auto;
+  }
