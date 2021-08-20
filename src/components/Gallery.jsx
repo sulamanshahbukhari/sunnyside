@@ -6,20 +6,20 @@ import gimg4 from '../images/desktop/image-gallery-sugarcubes.jpg';
 const Gallery=()=>{
 return(
 <>
-<div className='row g-0'>
-<div className='col'>
-<img src={gimg1} alt="" width='100%' height="auto"/>    
-</div>
-<div className='col'>
-<img src={gimg2} alt="" width='100%' height="auto"/>    
-</div>
-<div className='col'>
-<img src={gimg3} alt="" width='100%' height="auto"/>    
-</div>
-<div className='col'>
-<img src={gimg4} alt="" width='100%' height="auto"/>    
-</div>
-</div>
+    <div className='row g-0'>
+        <div className='col-md-3 col-6  '>
+        <img src={gimg1} alt="" width='100%' height="auto"/>    
+        </div>
+        <div className='col-md-3 col-6 '>
+        <img src={gimg2} alt="" width='100%' height="auto"/>    
+        </div>
+        <div className='col-md-3 col-6 '>
+        <img src={gimg3} alt="" width='100%' height="auto"/>    
+        </div>
+        <div className='col-md-3 col-6 '>
+        <img src={gimg4} alt="" width='100%' height="auto"/>    
+        </div>
+    </div>
 </>
 
 );

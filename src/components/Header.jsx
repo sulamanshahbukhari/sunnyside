@@ -1,6 +1,8 @@
 import React from 'react';
 import Navbar from './Navbar';
 import headerimg from '../images/desktop/image-header.jpg';
+import arrow from '../images/icon-arrow-down.svg';
+
 let stylesec={
     background:`url(${headerimg})`,
     width:'100%',
@@ -16,7 +18,9 @@ const Header =()=>{
         <div style={stylesec}>
         <Navbar></Navbar>
         <div className='heroText'>
-            <h3>We are Creatives</h3>
+            <h1  className='mb-5'>We are Creatives</h1>
+            <img src={arrow} alt="arrowdown" />
+
         </div>
         </div>
         {/* <img src={headerimg} alt="headerimg" style={{width:'100%',minHeight:'100vh'}} /> */}

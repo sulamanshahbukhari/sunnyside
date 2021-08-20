@@ -3,7 +3,7 @@ import logo from '../images/logo.svg'
 const Navbar=()=>{
 return(
 <>
-<nav className='navbar-nav'>
+<nav className=''>
     <ul>
       <a href="#" className='navLogo '><li><img src={logo} alt="logo" /></li></a> 
       <a href="#" className='btncontact'>Contact</a> 
