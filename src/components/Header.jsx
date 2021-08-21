@@ -6,7 +6,7 @@ import arrow from '../images/icon-arrow-down.svg';
 let stylesec={
     background:`url(${headerimg})`,
     width:'100%',
-    minHeight:'100vh',
+    height:'100vh',
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat'

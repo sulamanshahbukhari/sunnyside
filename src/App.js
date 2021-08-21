@@ -5,17 +5,17 @@ import Section_one from './components/Section-one';
 import Testimonials from './components/Testimonials';
 import Gallery from './components/Gallery';
 import Footer from './components/Footer';
+import Navbar from './components/Navbar';
 const App =()=>{
+    
 return(
     <>
-    <div className='container '>
+  
     <Header/>
     <Section_one/>
     <Testimonials/>
     <Gallery/>
-    <Footer/>
-    
-    </div>
+    <Footer/> 
   
 
     </>

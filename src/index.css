@@ -1,9 +1,10 @@
 body{
   width: 100%;
-  overflow-x: hidden;
+  height: auto;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
   
 }
 
@@ -22,28 +23,34 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 20;
+  z-index: 1;
 }
-nav ul  a{
-  text-decoration: none;
-  display: inline-block;
-  padding: 10px;
-  margin: 20px 60px 0px 0px;
-  list-style: none;
+/* nav css */
+.basenav{
+  display: flex;
+  justify-content: space-around;
+  min-height: 8vh;
+  align-items: center;
   font-family: 'Barlow', sans-serif;
-  
+
 }
-nav ul a li {
-  color:#fff;
+.nav-links
+{
+  display: flex;
+  justify-content: space-around;
+  width: 45%;
+  padding-top: 10px;
 }
-.navLogo{
-  font-weight: bold;
-  font-size: 30px;
-  margin: 5px 0px 0px 0px;
+.nav-links a{
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 2px;
 }
-.navLogo ~ a{
-  float: right;
- 
+.nav-links li{
+  list-style: none;
+}
+.nav-links a:hover{
+  color: #fff;
 }
 .btncontact{
   border-radius: 30px;
@@ -51,15 +58,95 @@ nav ul a li {
   text-transform: uppercase;
   font-family: 'Fraunces', serif; 
   padding: 10px 20px;
-  color: #000;
+  color: #000 !important;
   font-size: 15px;
 
 }
 .btncontact:hover{
-  color: #fff;
+  color: #fff !important;
   background-color: #6fcfff;
 
 }
+.navlinkmargin
+{ margin-right: 10%;}
+/* burger menu */
+.burger
+{
+  display: none;
+}
+.burger div{
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links
+  {
+    width: 65%;
+   
+  }
+}
+@media screen and (max-width: 786px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links
+  {
+   position: absolute;
+   text-align: center;
+   right: 0%;
+   height: 50vh;
+   top: 8vh;
+   background-color:#fff;
+   display: flex;
+   flex-direction: column;
+   width: 80%;
+   transform: translateX(100%);
+   transition: transform 0.5s ease-in;
+   padding-left: 0rem;
+   z-index: 2;
+  }
+  .nav-links li {
+    opacity: 1;
+  }
+  .nav-links a , .nav-links a:hover{
+   color: #000;
+  }
+  .burger{
+    display: block;
+  }
+  .btncontact{
+    background-color:#fed601;
+  }
+}
+.nav-active{
+ transform: translateX(0%);
+}
+
+/* burger line toggles and transitions */
+.line1
+{transform: rotate(45deg) translate();
+  transition: transform 0.3s ease-in;
+}
+.line3
+{transform: rotate(-45deg) translate();
+  transition: transform 0.3s ease-in;  
+}
+.toggle .line1{
+ transform: rotate(-45deg) translate(-5px,6px);
+ transition: transform 0.3s ease-in;
+}
+.toggle .line2{ opacity: 0;}
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px,-6px);
+  transition: transform 0.3s ease-in;}
+
 /* header css */
 .heroText{
   text-align: center;
